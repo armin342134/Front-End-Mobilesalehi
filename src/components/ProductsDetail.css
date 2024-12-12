@@ -1,0 +1,7 @@
+.container-id {
+  direction: rtl;
+  border: solid 1px white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}

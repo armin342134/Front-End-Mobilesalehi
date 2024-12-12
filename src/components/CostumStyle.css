@@ -1,0 +1,54 @@
+.custom-dropdown .dropdown-toggle::after {
+  color: white;
+  margin-right: 5px;
+}
+.dropdown-item:focus,
+.dropdown-item.active {
+  background-color: red;
+}
+.contect-footer h5 {
+  margin-top: 15px;
+}
+
+.div-timer .span-hour,
+.span-min,
+.span-seconds {
+  background-color: white;
+  color: black;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.span-seprator {
+  background-color: transparent;
+  color: white;
+  margin-right: 5px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.personal-ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0%;
+}
+.personal-ul li {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personal-ul li:hover {
+  background-color: rgb(72, 70, 70);
+}

@@ -1,0 +1,44 @@
+* {
+  color: lightgray;
+  font-family: vazir;
+  direction: rtl;
+}
+
+.card-bg {
+  background-color: #1a1c1e;
+}
+
+.search-ul {
+  position: absolute;
+  top: 100%;
+  width: 33%;
+  z-index: 1050;
+  background-color: lightgray;
+  border-radius: 0px 0px 10px 10px;
+  overflow-y: auto;
+  max-height: 200px;
+}
+.searchbar-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+  background-color: lightgray;
+  color: #1a1c1e;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+.searchbar-list-down {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  background-color: white;
+  color: #1a1c1e;
+  margin: 10px 0px;
+  cursor: pointer;
+}
