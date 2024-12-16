@@ -171,7 +171,13 @@ export default function ProductsDetail() {
             <h2>{product.title}</h2>
             <p>قیمت : {formatPrice(product.price)} تومان</p>
             <h3>نقد و بررسی</h3>
-            <p>{product.description}</p>
+            <p
+              style={{
+                textAlign: "justify",
+              }}
+            >
+              {product.description}
+            </p>
           </Tab>
           <Tab eventKey="comments" title="نظرات کاربران">
             <Comments productId={product._id} productTitle={product.title} />
