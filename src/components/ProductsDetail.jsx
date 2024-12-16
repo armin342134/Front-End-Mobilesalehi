@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { json, Link, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./ProductsDetail.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Tab, Tabs, Container, Row, Col, Table } from "react-bootstrap";
+import { Tab, Tabs, Row, Col } from "react-bootstrap";
 import { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 import { formatPrice } from "./ChangeNumbers";
@@ -122,7 +122,7 @@ export default function ProductsDetail() {
         </div>
         <div className="col-md-4 col-sm-6  d-flex flex-column justify-content-around  bg-light  rounded-3 shadow">
           <div>
-            <h2 className="text-dark">گارانتی :</h2>
+            <h2 className="text-dark mt-3 mt-md-0">گارانتی :</h2>
             <div>
               <select className="text-dark w-100">
                 <option className="text-dark">18 ماه گارانتی سازگار</option>
@@ -130,10 +130,13 @@ export default function ProductsDetail() {
             </div>
           </div>
           <div>
-            <h2 className="text-dark">رنگ :</h2>
+            <h2 className="text-dark  mt-3 mt-md-0">رنگ :</h2>
             <div>
               {" "}
-              <select className="form-select" onChange={handelchangeColor}>
+              <select
+                className="form-select  mt-3 mt-md-0"
+                onChange={handelchangeColor}
+              >
                 {product.colors.map((item) => (
                   <option key={item} className="text-dark">
                     {item}
@@ -144,14 +147,14 @@ export default function ProductsDetail() {
           </div>
           <div>
             <button
-              className="btn btn-danger"
+              className="btn btn-danger  mt-3 mt-md-0"
               onClick={() => cart.addItemToCart(product._id, color)}
             >
               افزودن سبد خرید
             </button>
           </div>
           <div>
-            <h2 className="text-dark">
+            <h2 className="text-dark  mt-3 mt-md-0">
               قیمت : {formatPrice(product.price)} تومان
             </h2>
           </div>

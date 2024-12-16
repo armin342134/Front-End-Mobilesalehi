@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 export default function SearchBar() {
   const { productList } = useProductList();
   const [searchTerm, setSearchTerm] = useState("");
-  if (!productList.length) {
-    return <p>loading ....</p>;
-  }
 
   const filterProduct = productList.filter((item) =>
     item.title.toLowerCase().includes(searchTerm.toLowerCase())
