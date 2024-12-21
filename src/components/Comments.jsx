@@ -12,7 +12,9 @@ export default function Comments({ productId, productTitle }) {
 
   const fetchComments = async () => {
     try {
-      await fetch(`http://localhost:5000/comments?productId=${productId}`)
+      await fetch(
+        `https://mobilesalehi.onrender.com/comments?productId=${productId}`
+      )
         .then((res) => res.json())
         .then((data) => setComments(data));
     } catch (error) {
