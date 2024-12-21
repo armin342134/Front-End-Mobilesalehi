@@ -26,7 +26,7 @@ export default function IphoneSlider() {
         pagination={{
           clickable: true,
         }}
-        className="mySlider  "
+        className="mySlider   "
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -54,7 +54,7 @@ export default function IphoneSlider() {
           .filter((item) => item.brand == "iphone")
 
           .map((item) => (
-            <SwiperSlide key={item._id}>
+            <SwiperSlide key={item._id} className="overflow-hidden">
               <ProductItem product={item} />
             </SwiperSlide>
           ))}

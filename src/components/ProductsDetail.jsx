@@ -120,7 +120,7 @@ export default function ProductsDetail() {
             </tbody>
           </table>
         </div>
-        <div className="col-md-4 col-sm-6  d-flex flex-column justify-content-around  bg-light  rounded-3 shadow">
+        <div className="col-md-4 col-sm-6 mt-5 mt-md-0  d-flex flex-column justify-content-around  bg-light  rounded-3 shadow">
           <div>
             <h2 className="text-dark mt-3 mt-md-0">گارانتی :</h2>
             <div>

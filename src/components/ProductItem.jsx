@@ -21,8 +21,8 @@ export default function ProductItem({ product }) {
   const ProductQuantity = cart.getProductQuantity(product._id);
 
   return (
-    <Card className=" me-3 ms-3  card-bg">
-      <CardBody>
+    <Card className=" me-3 ms-3  card-bg   ">
+      <CardBody className="">
         <CardImg
           variant="top"
           style={{ objectFit: "cover" }}
