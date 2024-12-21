@@ -54,7 +54,7 @@ export default function IphoneSlider() {
           .filter((item) => item.brand == "iphone")
 
           .map((item) => (
-            <SwiperSlide key={item._id} className="overflow-hidden">
+            <SwiperSlide key={item._id} className="overflow-hidden rounded-3">
               <ProductItem product={item} />
             </SwiperSlide>
           ))}

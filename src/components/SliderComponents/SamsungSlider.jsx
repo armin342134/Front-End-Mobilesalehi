@@ -54,7 +54,7 @@ export default function SamsungSlider() {
         {productList.productList
           .filter((item) => item.brand == "samsung")
           .map((item) => (
-            <SwiperSlide key={item._id} className="overflow-hidden">
+            <SwiperSlide key={item._id} className="overflow-hidden rounded-3">
               <ProductItem product={item} />
             </SwiperSlide>
           ))}
