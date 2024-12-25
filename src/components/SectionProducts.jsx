@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import SectionProductsItem from "./SectionProductsItem";
 
 export default function SectionProducts() {
@@ -35,31 +34,13 @@ export default function SectionProducts() {
       <div className="col-12">
         <div className="row">
           <div className="container  d-flex flex-row  justify-content-between p-5 ">
-            <SectionProductsItem
-              pagelink={InfoSections[0].pagelink}
-              img={InfoSections[0].img}
-              title={InfoSections[0].title}
-            />
-            <SectionProductsItem
-              pagelink={InfoSections[1].pagelink}
-              img={InfoSections[1].img}
-              title={InfoSections[1].title}
-            />
-            <SectionProductsItem
-              pagelink={InfoSections[2].pagelink}
-              img={InfoSections[2].img}
-              title={InfoSections[2].title}
-            />
-            <SectionProductsItem
-              pagelink={InfoSections[3].pagelink}
-              img={InfoSections[3].img}
-              title={InfoSections[3].title}
-            />
-            <SectionProductsItem
-              pagelink={InfoSections[4].pagelink}
-              img={InfoSections[4].img}
-              title={InfoSections[4].title}
-            />
+            {InfoSections.map((item) => (
+              <SectionProductsItem
+                pagelink={item.pagelink}
+                img={item.img}
+                title={item.title}
+              />
+            ))}
           </div>
         </div>
       </div>
