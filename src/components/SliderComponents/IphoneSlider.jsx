@@ -8,8 +8,8 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Pagination, Autoplay, Keyboard } from "swiper/modules";
-import useProductList from "../../data/product.js";
-import ProductItem from "../ProductItem.jsx";
+import useProductList from "../../Data/product.js";
+import ProductItem from "../ProductsComponents/ProductItem";
 
 export default function IphoneSlider() {
   const productList = useProductList();

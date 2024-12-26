@@ -3,14 +3,14 @@ import { Navbar as Navbarbs, Button, Modal, ModalBody } from "react-bootstrap";
 import { BsCart } from "react-icons/bs";
 import { MdAccountCircle } from "react-icons/md";
 import { useState, useContext } from "react";
-import { CartContext } from "../Context/CartContext";
-import CartProducts from "./CartProducts";
-import SearchBar from "./SearchBar";
+import { CartContext } from "../../Context/CartContext";
+import CartProducts from "../Cart/CartProducts";
+import SearchBar from "../Header/SearchBar";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import BlackFriday from "./SliderComponents/BlackFriday";
-import { formatPrice } from "./ChangeNumbers";
+import BlackFriday from "../SliderComponents/BlackFriday";
+import { formatPrice } from "../ChangeNumber/ChangeNumbers";
 
 export default function Navbar() {
   const [showmodal, setShowmodal] = useState(false);

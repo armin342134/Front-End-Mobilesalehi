@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { formatPrice } from "../ChangeNumbers";
+import { formatPrice } from "../ChangeNumber/ChangeNumbers";
 import "../CostumStyle.css";
 
 export default function BlackFriday() {

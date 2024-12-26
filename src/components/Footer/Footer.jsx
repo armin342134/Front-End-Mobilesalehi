@@ -1,5 +1,5 @@
 import React from "react";
-import "./CostumStyle.css";
+import "./../CostumStyle.css";
 import { Button } from "react-bootstrap";
 import { FaInstagram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 

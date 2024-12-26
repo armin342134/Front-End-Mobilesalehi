@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import ProductItem from "../ProductItem";
-import useProductList from "../../data/product";
+import ProductItem from "../ProductsComponents/ProductItem";
+import useProductList from "../../Data/product";
 import Pageslider from "../SliderComponents/Pageslider";
 
 export default function AllProducts() {

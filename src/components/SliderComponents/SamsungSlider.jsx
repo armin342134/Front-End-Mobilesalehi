@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ProductItem from "../ProductItem";
-import useProductList from "../../data/product";
+import ProductItem from "../ProductsComponents/ProductItem";
+import useProductList from "../../Data/product";
 
 // Import Swiper styles
 import "swiper/css";

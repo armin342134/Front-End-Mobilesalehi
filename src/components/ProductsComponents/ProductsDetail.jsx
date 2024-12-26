@@ -5,15 +5,15 @@ import "./ProductsDetail.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Tab, Tabs, Row, Col } from "react-bootstrap";
 import { useContext } from "react";
-import { CartContext } from "../Context/CartContext";
-import { formatPrice } from "./ChangeNumbers";
+import { CartContext } from "../../Context/CartContext";
+import { formatPrice } from "../ChangeNumber/ChangeNumbers";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cube";
 // import required modules
 import { EffectCube, Pagination } from "swiper/modules";
-import Comments from "./Comments";
+import Comments from "../Comments/Comments";
 
 export default function ProductsDetail() {
   const cart = useContext(CartContext);

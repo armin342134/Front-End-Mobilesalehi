@@ -1,15 +1,24 @@
 import { Button, NavDropdown, Form } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
-import "./CostumStyle.css";
-import { Link, Navigate } from "react-router-dom";
-import { json, useNavigate, useParams } from "react-router-dom";
-import SearchBar from "./SearchBar";
+import "./../CostumStyle.css";
+import { useNavigate } from "react-router-dom";
 
 function NavbarS() {
   const navigate = useNavigate();
+  const Mobile = [
+    { productName: "آیفون", productPath: "/products/iphone" },
+    { productName: "سامسونگ", productPath: "/products/samsung" },
+    { productName: "شیائومی", productPath: "/products/xiaomi" },
+    { productName: "نوکیا", productPath: "/products/nokia" },
+  ];
+  const Leptop = [
+    { productName: " لپ تاپ Apple", productPath: "/products/iphone" },
+    { productName: " لپ تاپ Asus", productPath: "/products/samsung" },
+    { productName: " لپ تاپ Lenovo", productPath: "/products/xiaomi" },
+    { productName: " لپ تاپ Hp", productPath: "/products/Hp" },
+  ];
 
   return (
     <>
@@ -44,48 +53,30 @@ function NavbarS() {
                 style={{ textAlign: "right" }}
                 drop="start"
               >
-                <LinkContainer
-                  to={"/products/iphone"}
-                  style={{ textAlign: "right" }}
-                >
-                  <NavDropdown.Item>آیفون</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer
-                  to={"/products/samsung"}
-                  style={{ textAlign: "right" }}
-                >
-                  <NavDropdown.Item>سامسونگ</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer
-                  to={"/products/xiaomi"}
-                  style={{ textAlign: "right" }}
-                >
-                  <NavDropdown.Item style={{ textAlign: "right" }}>
-                    شیائومی
-                  </NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer
-                  to={"/products/nokia"}
-                  style={{ textAlign: "right" }}
-                >
-                  <NavDropdown.Item style={{ textAlign: "right" }}>
-                    نوکیا
-                  </NavDropdown.Item>
-                </LinkContainer>
+                {Mobile.map((item) => (
+                  <LinkContainer
+                    to={item.productPath}
+                    style={{ textAlign: "right" }}
+                  >
+                    <NavDropdown.Item>{item.productName}</NavDropdown.Item>
+                  </LinkContainer>
+                ))}
               </NavDropdown>
               <NavDropdown
                 title={<span style={{ color: "black" }}> لپ تاپ</span>}
                 style={{ textAlign: "right" }}
                 drop="start"
               >
-                <LinkContainer
-                  to={"/products/xiaomi"}
-                  style={{ textAlign: "right" }}
-                >
-                  <NavDropdown.Item
+                {Leptop.map((item) => (
+                  <LinkContainer
+                    to={item.productPath}
                     style={{ textAlign: "right" }}
-                  ></NavDropdown.Item>
-                </LinkContainer>
+                  >
+                    <NavDropdown.Item style={{ textAlign: "right" }}>
+                      {item.productName}
+                    </NavDropdown.Item>
+                  </LinkContainer>
+                ))}
               </NavDropdown>
               <NavDropdown
                 title={<span style={{ color: "black" }}>ساعت هوشمند</span>}

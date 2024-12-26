@@ -10,7 +10,7 @@ export default function SectionProducts() {
     },
     {
       pagelink: "/productsAll",
-      img: "/Images/leptop/color_image_TLP-35481_91a04316-0780-428b-a557-6f3df63484eb.png",
+      img: "/Images/leptop/asus/color_image_TLP-35481_91a04316-0780-428b-a557-6f3df63484eb.png",
       title: "لپ تاپ",
     },
     {

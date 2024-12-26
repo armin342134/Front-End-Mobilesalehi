@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, FormControl } from "react-bootstrap";
-import useProductList from "../data/product";
+import useProductList from "../../Data/product";
 import { Link } from "react-router-dom";
 
 export default function SearchBar() {

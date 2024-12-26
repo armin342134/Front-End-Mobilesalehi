@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Form, Button } from "react-bootstrap";
-import Profile from "./ProfileList";
 import ProfileList from "./ProfileList";
 
 export default function Address() {

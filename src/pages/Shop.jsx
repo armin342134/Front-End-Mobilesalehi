@@ -1,8 +1,8 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import useProductList from "../data/product";
+import { Row } from "react-bootstrap";
+import useProductList from "../Data/product";
 import SwiperPagination from "../components/SliderComponents/SwiperPagination";
-import SectionProducts from "../components/SectionProducts";
+import SectionProducts from "../components/Sections/SectionProducts";
 import IphoneSlider from "../components/SliderComponents/IphoneSlider";
 import SamsungSlider from "../components/SliderComponents/SamsungSlider";
 

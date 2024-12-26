@@ -12,9 +12,9 @@ import {
   Row,
 } from "react-bootstrap";
 import { useContext } from "react";
-import { CartContext } from "../Context/CartContext";
+import { CartContext } from "../../Context/CartContext";
 import { Link } from "react-router-dom";
-import { formatPrice } from "../components/ChangeNumbers";
+import { formatPrice } from "../ChangeNumber/ChangeNumbers";
 
 export default function ProductItem({ product }) {
   const cart = useContext(CartContext);

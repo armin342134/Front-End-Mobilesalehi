@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
-import { CartContext } from "../Context/CartContext";
-import useProductList from "../data/product";
-import { formatPrice } from "./ChangeNumbers";
+import { CartContext } from "../../Context/CartContext";
+import useProductList from "../../Data/product";
+import { formatPrice } from "./../ChangeNumber/ChangeNumbers";
 
 export default function CartProducts({ _id, quantity, color }) {
   const { getProductData, error } = useProductList();

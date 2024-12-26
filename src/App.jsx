@@ -1,21 +1,22 @@
 import "./index.css";
 import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Header/Navbar";
 import { Container } from "react-bootstrap";
 import Shop from "./pages/Shop";
-import About from "./pages/About";
+import About from "./Pages/About";
 import Success from "./pages/Success";
 import { CartProvider } from "./Context/CartContext";
-import ProductsDetail from "./components/ProductsDetail";
+import ProductsDetail from "./components/ProductsComponents/ProductsDetail";
 import SignUp from "./components/User/SignUp";
 import SignIn from "./components/User/SignIn";
 import Profile from "./components/User/Profile";
-import NavbarS from "./components/NavbarS";
-import SamsungProduct from "./components/ProductsComponents/SamsungProduct";
-import XiaomiProducts from "./components/ProductsComponents/XiaomiProducts";
-import NokiaProducts from "./components/ProductsComponents/NokiaProducts";
-import IphoneProducts from "./components/ProductsComponents/IphoneProducts";
-import Footer from "./components/Footer";
+import NavbarS from "./components/Header/NavbarS";
+import SamsungProduct from "./components/ProductsComponents/Mobile/SamsungProduct";
+import XiaomiProducts from "./components/ProductsComponents/Mobile/XiaomiProducts";
+import NokiaProducts from "./components/ProductsComponents/Mobile/NokiaProducts";
+import IphoneProducts from "./components/ProductsComponents/Mobile/IphoneProducts";
+import HpProducts from "./components/ProductsComponents/Leptop/HpProducts";
+import Footer from "./components/Footer/Footer";
 import AllProducts from "./components/ProductsComponents/AllProducts";
 import ProfileOrders from "./components/User/ProfileOrders";
 import OrderProvider from "./Context/OrderContext";
@@ -45,6 +46,7 @@ function App() {
             ></Route>
             <Route path="/products/xiaomi" element={<XiaomiProducts />}></Route>
             <Route path="/products/nokia" element={<NokiaProducts />}></Route>
+            <Route path="/products/Hp" element={<HpProducts />}></Route>
             <Route path="/success" element={<Success />} />
             <Route path="/products/:id" element={<ProductsDetail />}></Route>
             <Route path="/profile" element={<Profile />}></Route>

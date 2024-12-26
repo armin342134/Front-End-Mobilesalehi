@@ -1,6 +1,6 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
-import ProductItem from "../ProductItem";
-import { Col, Pagination, Row } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import ProductItem from "../ProductsComponents/ProductItem";
+import { Col, Row } from "react-bootstrap";
 import Pageslider from "../SliderComponents/Pageslider";
 
 export default function BrandProduct({ brandName }) {
