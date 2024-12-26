@@ -24,6 +24,7 @@ import EditAccount from "./components/User/EditAccount";
 import Address from "./components/User/Address";
 import UsedPhones from "./pages/UsedPhones";
 import ContectUs from "./pages/ContectUs";
+import Macbook from "./components/ProductsComponents/Leptop/Macbook";
 function App() {
   return (
     <CartProvider>
@@ -47,6 +48,7 @@ function App() {
             <Route path="/products/xiaomi" element={<XiaomiProducts />}></Route>
             <Route path="/products/nokia" element={<NokiaProducts />}></Route>
             <Route path="/products/Hp" element={<HpProducts />}></Route>
+            <Route path="/products/Macbook" element={<Macbook />}></Route>
             <Route path="/success" element={<Success />} />
             <Route path="/products/:id" element={<ProductsDetail />}></Route>
             <Route path="/profile" element={<Profile />}></Route>

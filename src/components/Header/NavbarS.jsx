@@ -14,9 +14,9 @@ function NavbarS() {
     { productName: "نوکیا", productPath: "/products/nokia" },
   ];
   const Leptop = [
-    { productName: " لپ تاپ Apple", productPath: "/products/iphone" },
-    { productName: " لپ تاپ Asus", productPath: "/products/samsung" },
-    { productName: " لپ تاپ Lenovo", productPath: "/products/xiaomi" },
+    { productName: " لپ تاپ مک بوک", productPath: "/products/Macbook" },
+    { productName: " لپ تاپ ایسوس", productPath: "/products/samsung" },
+    { productName: " لپ تاپ لنوو", productPath: "/products/xiaomi" },
     { productName: " لپ تاپ Hp", productPath: "/products/Hp" },
   ];
 

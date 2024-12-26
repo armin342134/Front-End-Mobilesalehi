@@ -109,10 +109,17 @@ export default function ProductsDetail() {
                 <td>سایز صفحه نمایش :</td>
                 <td>{product.Specifications.display}</td>
               </tr>
-              <tr>
-                <td>دوربین پشت :</td>
-                <td>{product.Specifications.camera}</td>
-              </tr>
+              {product.Specifications.camera ? (
+                <tr>
+                  <td>دوربین پشت :</td>
+                  <td>{product.Specifications.camera}</td>
+                </tr>
+              ) : (
+                <tr>
+                  <td> نوع کاربری :</td>
+                  <td>{product.Specifications.usertype}</td>
+                </tr>
+              )}
               <tr>
                 <td>ظرفیت باتری :</td>
                 <td>{product.Specifications.battry}</td>
