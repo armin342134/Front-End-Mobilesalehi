@@ -25,6 +25,7 @@ import Address from "./components/User/Address";
 import UsedPhones from "./Pages/UsedPhones";
 import ContectUs from "./Pages/ContectUs";
 import Macbook from "./components/ProductsComponents/Leptop/Macbook";
+
 function App() {
   return (
     <CartProvider>
