@@ -2,7 +2,7 @@ import "./index.css";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Header/Navbar";
 import { Container } from "react-bootstrap";
-import Shop from "./pages/Shop";
+import Shop from "./Pages/Shop";
 import About from "./Pages/About";
 import Success from "./pages/Success";
 import { CartProvider } from "./Context/CartContext";
@@ -22,8 +22,8 @@ import ProfileOrders from "./components/User/ProfileOrders";
 import OrderProvider from "./Context/OrderContext";
 import EditAccount from "./components/User/EditAccount";
 import Address from "./components/User/Address";
-import UsedPhones from "./pages/UsedPhones";
-import ContectUs from "./pages/ContectUs";
+import UsedPhones from "./Pages/UsedPhones";
+import ContectUs from "./Pages/ContectUs";
 import Macbook from "./components/ProductsComponents/Leptop/Macbook";
 function App() {
   return (
