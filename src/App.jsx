@@ -4,7 +4,7 @@ import Navbar from "./components/Header/Navbar";
 import { Container } from "react-bootstrap";
 import Shop from "./Pages/Shop";
 import About from "./Pages/About";
-import Success from "./pages/Success";
+import Success from "./Pages/Success";
 import { CartProvider } from "./Context/CartContext";
 import ProductsDetail from "./components/ProductsComponents/ProductsDetail";
 import SignUp from "./components/User/SignUp";
