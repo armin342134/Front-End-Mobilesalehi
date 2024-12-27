@@ -7,6 +7,7 @@ import IphoneSlider from "../components/SliderComponents/IphoneSlider";
 import SamsungSlider from "../components/SliderComponents/SamsungSlider";
 
 export default function Shop() {
+  const name = "armin";
   const productList = useProductList();
   document.title = " صفحه ای اصلی - فروشگاه موبایل صالحی";
 
